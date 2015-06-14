@@ -1,0 +1,19 @@
+.componentList {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.componentItem {
+	flex: 1;
+	padding: 10px;
+	border-bottom: 1px solid black;
+}
+
+.componentContainer {
+	max-height: 200px;
+	display: flex;
+	flex-direction: column;
+}
