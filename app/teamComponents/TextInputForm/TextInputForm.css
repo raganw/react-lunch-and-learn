@@ -1,0 +1,20 @@
+.textInputForm {
+	height: 2rem;
+	display: flex;
+	flex-direction: row;
+}
+
+.textInput {
+	flex: 1;
+	font-size: 1rem;
+}
+
+.textInputFormSubmit {
+	border: 0;
+	display: block;
+	box-sizing: border-box;
+	height: 100%;
+	margin: 0;
+	padding: 0 1em;
+	font-size: 1rem;
+}
