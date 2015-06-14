@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>TextInputForm</title>
+  <link rel="stylesheet" href="./TextInputForm.css"/>
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <h1>TextInputForm Spec</h1>
+
+  <p>This is a standard form with an action and submit method.</p>
+
+<ul><li>It has an input element of type &quot;text&quot;.</li><li>It has an input element of type &quot;submit&quot;.</li><li>It can be provided as props an action, onSubmit handler, and submit button value.</li><li>On submit, it should call the onSubmit handler and clear the text input.</li></ul>
+
+<p><em>The tricky part will be responding to changes to the text input.</em></p>
+
+<h3>Standard Style</h3>
+
+<form action="/submit" class="textInputForm" method="post">
+    <input class="textInput" name="value" type="text" value="">
+    <input class="textInputFormSubmit" type="submit" value="Go!">
+</form>
+</body>
+</html>

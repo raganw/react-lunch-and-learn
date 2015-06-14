@@ -1,0 +1,30 @@
+.root {
+  margin: 5px 5px;
+  border-radius: 20px;
+  box-shadow: 0 6px #bbb;
+  background-color: #eee;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.root:hover {
+  box-shadow: 0 4px #bbb;
+  top: 2px;
+}
+
+.root:active {
+  box-shadow: 0 0 #bbb;
+  top: 6px;
+}
+
+.isSelected,
+.isSelected:hover,
+.isSelected:active {
+  top: 6px;
+  box-shadow: 0 -6px #666;
+  background-color: #bbb;
+}

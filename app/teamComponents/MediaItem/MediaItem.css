@@ -1,0 +1,23 @@
+.mediaItem {
+	display: flex;
+	height: 50px;
+	align-items: center;
+	box-sizing: border-box;
+	border: 1px solid blue;
+}
+
+.mediaElement {
+	flex: 0 0 50px;
+	height: 48px;
+}
+
+.mediaElement svg,
+.mediaElement img {
+	height: 48px;
+	width: 48px;
+}
+
+.mediaLabel {
+	flex: 1;
+	margin-left: 10px;
+}
