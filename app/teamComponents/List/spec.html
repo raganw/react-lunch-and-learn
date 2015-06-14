@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>List</title>
+  <link rel="stylesheet" href="./List.css"/>
+  <style>
+    html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+.componentContainer {
+  display: block;
+  height: 200px;
+  width: 100%;
+}
+
+.componentContainer > * {
+  height: 100%;
+}
+  </style>
+</head>
+<body>
+
+  <h1>List Spec</h1>
+
+  <p>This is a component that takes some number of other components as children and
+renders them into a <code>&lt;ul/&gt;</code>, wrapping each in a <code>&lt;li/&gt;</code></p>
+
+<ul><li>It should scroll within its list if constrained by a parent&#39;s height.</li></ul>
+
+<p><em>Hint: See the <a href="http://facebook.github.io/react/docs/top-level-api.html#react.children">React.Children helpers</a></em></p>
+
+<h3>Standard Style</h3>
+
+<div class="componentContainer">
+  <ul class="listElement">
+    <li class="listItem"><h2>Item 1</h2></li>
+    <li class="listItem"><h2>Item 2</h2></li>
+    <li class="listItem"><h2>Item 3</h2></li>
+    <li class="listItem"><h2>Item 4</h2></li>
+    <li class="listItem"><h2>Item 5</h2></li>
+    <li class="listItem"><h2>Item 6</h2></li>
+  </ul>
+</div>
+</body>
+</html>
