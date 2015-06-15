@@ -7,7 +7,13 @@ class SVGElement extends Component {
 
   render() {
     const { className, svg } = this.props;
-    return (null);
+    const innerHTML = {
+      __html: svg
+    };
+
+    return (
+      <span className={className} dangerouslySetInnerHTML={innerHTML}></span>
+    );
   }
 
 }

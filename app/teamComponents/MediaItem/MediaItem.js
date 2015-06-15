@@ -9,7 +9,14 @@ class MediaItem extends Component {
     const { className, item, label } = this.props;
     let classes = cx(className, mediaItem);
 
-    return (null);
+    return (
+      <div className={classes}>
+        <div className={mediaElement}>
+          {item}
+        </div>
+        <div className={mediaLabel}>{label}</div>
+      </div>
+    );
   }
 }
 

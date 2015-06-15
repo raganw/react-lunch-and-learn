@@ -3,11 +3,22 @@ import React, {Children, Component, PropTypes} from 'react';
 import cx from 'classnames';
 
 class List extends Component {
+  renderItems(children) {
+    return Children.map(
+      children,
+      (component) => (<li className={listItem}>{component}</li>)
+    );
+  }
+
   render() {
     const { children, className } = this.props;
     let classes = cx(className, listElement);
 
-    return (null);
+    return (
+      <ul className={classes}>
+        {this.renderItems(children)}
+      </ul>
+    );
   }
 }
 

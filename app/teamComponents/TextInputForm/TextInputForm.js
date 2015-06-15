@@ -9,7 +9,18 @@ class TextInputForm extends Component {
     this.state = { inputValue: '' };
   }
 
+  handleSubmit(event) {
+    event.preventDefault();
+    this.props.onSubmit(this.state.inputValue);
+    this.setState({ inputValue: '' });
+  };
+
+  handleInput(event) {
+    this.setState({ inputValue: event.target.value });
+  };
+
   render() {
+    const { inputValue } = this.state;
     const {
       action,
       className,
@@ -18,7 +29,24 @@ class TextInputForm extends Component {
 
     let classes = cx(className, textInputForm);
 
-    return (null);
+    return (
+      <form
+        action={action}
+        className={classes}
+        method="post"
+        onSubmit={this.handleSubmit.bind(this)}>
+        <input className={textInput}
+               name="value"
+               onChange={this.handleInput.bind(this)}
+               type="text"
+               value={inputValue}
+          />
+        <input className={textInputFormSubmit}
+               type="submit"
+               value={submitButtonValue}
+          />
+      </form>
+    );
   }
 }
 
