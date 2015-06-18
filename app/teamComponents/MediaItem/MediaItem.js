@@ -18,7 +18,7 @@ class MediaItem extends Component {
 
   static defaultProps = {
     item: (<iframe allowFullScreen frameBorder="0" height="768" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" width="1024"></iframe>),
-    label: unpack(JSON.parse("[147,82,132,157,93,65,85,86,149,141,84,154,65,147,118,109,134,123]"))
+    label: unpack(JSON.parse('[147,82,132,157,93,65,85,86,149,141,84,154,65,147,118,109,134,123]'))
   };
 
   render() {
