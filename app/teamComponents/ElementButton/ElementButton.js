@@ -15,7 +15,7 @@ class ElementButton extends Component {
     onClick: PropTypes.func.isRequired
   };
 
-  handleClick = (value) => {
+  handleClick = () => {
     this.props.onClick(this.props.value);
   };
 
