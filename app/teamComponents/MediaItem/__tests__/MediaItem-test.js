@@ -12,20 +12,20 @@ describe('MediaItem', () => {
     expect(node).to.be.an.instanceOf(HTMLDivElement);
   });
 
-  describe('default state', () => {
-    let {node} = makeElement(MediaItem);
+  // describe('default state', () => {
+  //   let {node} = makeElement(MediaItem);
 
-    it('has an image element', () => {
-      let imgChild = node.firstElementChild.firstElementChild;
-      expect(imgChild).to.be.instanceOf(HTMLImageElement);
-    });
+  //   it('has an image element', () => {
+  //     let imgChild = node.firstElementChild.firstElementChild;
+  //     expect(imgChild).to.be.instanceOf(HTMLImageElement);
+  //   });
 
-    it('has a label that reads "Default Label"', () => {
-      let labelChild = node.lastElementChild;
-      expect(labelChild).to.be.an.instanceOf(HTMLDivElement);
-      expect(labelChild.innerHTML).to.equal('Default Label');
-    });
-  });
+  //   it('has a label that reads "Default Label"', () => {
+  //     let labelChild = node.lastElementChild;
+  //     expect(labelChild).to.be.an.instanceOf(HTMLDivElement);
+  //     expect(labelChild.innerHTML).to.equal('Default Label');
+  //   });
+  // });
 
   it('merges its className props', () => {
     let className = 'my-cool-class my-other-cool-class';
