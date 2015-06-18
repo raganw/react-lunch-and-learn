@@ -15,6 +15,10 @@ class ElementButton extends Component {
     onClick: PropTypes.func.isRequired
   };
 
+  handleClick = (value) => {
+    this.props.onClick(this.props.value);
+  };
+
   static defaultProps = {
     children: (<h1>Click Me!</h1>),
     href: '#',
@@ -36,11 +40,16 @@ class ElementButton extends Component {
     const classes = cx(
       className,
       {
-        [styles.root]: true
+        [styles.root]: true,
+        isSelected: isSelected
       }
     );
 
-    return (null);
+    return (
+      <a className={classes} href={href} onClick={this.handleClick}>
+        {children}
+      </a>
+    );
   }
 
 }
