@@ -23,9 +23,17 @@ class List extends Component {
 
   render() {
     const { children, className } = this.props;
-    let classes = cx(className, listElement);
+    let listElementClassName = cx(className, listElement);
 
-    return (null);
+    var childElements = Children.map(children, function(child) {
+      return <li className={listItem}>{child}</li>;
+    });
+
+    return (
+      <ul className={listElementClassName}>
+        {childElements}
+      </ul>
+    );
   }
 }
 
